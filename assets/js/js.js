@@ -2,32 +2,11 @@
 stampa un messaggio appropriato sull’esito del controllo.
 
 Mail Bonus
-Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina.
-
-Gioco dei dadi
-Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, 
-in base a chi fa il punteggio più alto.
-Prima di partire a scrivere codice poniamoci qualche domanda:
-Che ci sia un array da qualche parte?
-Se dobbiamo confrontare qualcosa che "cosa" ci serve?
-Consigli del giorno:
-scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
-javascript non fa nulla da solo, dobbiamo dirgli noi cosa vogliamo fare
-si ma noi cosa vogliamo fare?
-torniamo a scrivere in italiano
-proviamo ad immaginare le operazioni che vogliamo far svolgere al
-nostro programma così come lo faremmo "a mano" */
+Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina.*/
 
 //Chiedi all’utente la sua email
 //controlla che l' email sia nella lista di chi può accedere
 //stampa un messaggio appropriato sull’esito del controllo.
-
-// lista degli utenti autorizzati
-// const authorizedUsers = [
-//   "user1@example.com",
-//   "user2@example.com",
-//   "user3@example.com",
-// ];
 
 function controllaAccesso() {
   const email = document.getElementById("email").value;
@@ -49,3 +28,17 @@ function controllaAccesso() {
     risultato.style.background = "red";
   }
 }
+
+// Gioco dei dadi
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Stabilire il vincitore,in base a chi fa il punteggio più alto.
+
+// Generare un numero random da 1 a 6
+// generare numeri da 1 a 6 per il giocatore sia per il computer
+//Stabilire il vincitore,in base a chi fa il punteggio più alto.
+
+// utilizzare macth random // console.log(Math.random()); per il giocatore
+// utilizzare macth random // console.log(Math.random()); per il computer
+// Assegno un punteggio ad ogni giocatore utilizzando una variabile per ogni giocatore
+// Confronto i punteggi per stabilire il vincitore.
+//    utilizzando  if per controllare quale punteggio è maggiore.
