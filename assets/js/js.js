@@ -45,3 +45,12 @@ function controllaAccesso() {
 
 let numeroCasuale = Math.round(Math.random() * 5) + 1;
 console.log(numeroCasuale);
+
+let punteggioGiocatore1 = 6;
+let punteggiocomputer = 5;
+
+if (punteggioGiocatore1 > punteggiocomputer) {
+  console.log("il giocatore 1 ha vinto");
+} else if (punteggioGiocatore1 < punteggiocomputer) {
+  console.log("il giocatore 2 ha vinto");
+}
