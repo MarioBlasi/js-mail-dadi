@@ -62,12 +62,15 @@ if (punteggioGiocatore1 > punteggiocomputer) {
   document.getElementById("risultatodadi").innerText =
     "Il Giocatore 1 ha vinto!";
   risultatodadi.style.background = "orange";
+  risultatodadi.style.color = "blue";
 } else if (punteggioGiocatore1 < punteggiocomputer) {
   document.getElementById("risultatodadi").innerText =
     "Il Giocatore 2 ha vinto!";
   risultatodadi.style.background = "lightblue";
+  risultatodadi.style.color = "blue";
 } else if ((punteggioGiocatore1 = punteggiocomputer)) {
   document.getElementById("risultatodadi").innerText =
-    "///////// I Giocatori pareggiano //////////";
+    " I GIOCATORI PAREGGIANO ";
   risultatodadi.style.background = "lightgrey";
+  risultatodadi.style.color = "red";
 }

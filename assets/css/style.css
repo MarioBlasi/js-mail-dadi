@@ -1,10 +1,10 @@
 body {
-  border: 2px solid rgb(113, 113, 145);
-  background-color: rgb(227, 236, 233);
+  border: 5px solid rgb(113, 113, 145);
+  background-color: rgb(185, 207, 200);
+  border-radius: 2rem;
 }
 h1 {
-  background-color: aqua;
-  border-radius: 2rem;
+  background-color: rgba(112, 163, 129, 0.582);
 }
 .mail {
   text-align: center;
@@ -17,4 +17,9 @@ h1 {
 button {
   border-radius: 2rem;
   height: 2rem;
+}
+input {
+  width: 15rem;
+  height: 2rem;
+  border-radius: 1rem;
 }
