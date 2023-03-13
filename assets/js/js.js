@@ -42,3 +42,6 @@ function controllaAccesso() {
 // Assegno un punteggio ad ogni giocatore utilizzando una variabile per ogni giocatore
 // Confronto i punteggi per stabilire il vincitore.
 //    utilizzando  if per controllare quale punteggio è maggiore.
+
+let numeroCasuale = Math.round(Math.random() * 5) + 1;
+console.log(numeroCasuale);
