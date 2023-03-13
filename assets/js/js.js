@@ -20,7 +20,16 @@ function controllaAccesso() {
     "utente7@gmail.com",
     "utente8@gmail.com",
   ];
-  if (listaAccesso.includes(email)) {
+
+  let hasAccess = false;
+  for (let i = 0; i < listaAccesso.length; i++) {
+    //console.log(listaAccesso[i]);
+    console.log(`Email inserita: ${email} Email del loop: ${listaAccesso[i]}`);
+    if (email == listaAccesso[i]) {
+      hasAccess = true;
+    }
+  }
+  if (hasAccess) {
     document.getElementById("risultato").textContent = "Accesso consentito.";
     risultato.style.background = "green";
   } else {
@@ -42,15 +51,16 @@ function controllaAccesso() {
 // Assegno un punteggio ad ogni giocatore utilizzando una variabile per ogni giocatore
 // Confronto i punteggi per stabilire il vincitore.
 //    utilizzando  if per controllare quale punteggio è maggiore.
-
 let numeroCasuale = Math.round(Math.random() * 5) + 1;
 console.log(numeroCasuale);
 
-let punteggioGiocatore1 = 6;
-let punteggiocomputer = 5;
+let punteggioGiocatore1 = (numeroCasuale = Math.round(Math.random() * 5) + 1);
+let punteggiocomputer = (numeroCasuale = Math.round(Math.random() * 5) + 1);
 
 if (punteggioGiocatore1 > punteggiocomputer) {
   console.log("il giocatore 1 ha vinto");
 } else if (punteggioGiocatore1 < punteggiocomputer) {
   console.log("il giocatore 2 ha vinto");
+} else if ((punteggioGiocatore1 = punteggiocomputer)) {
+  console.log("i giocatori pareggiano");
 }
