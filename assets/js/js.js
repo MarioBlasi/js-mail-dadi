@@ -3,6 +3,7 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 Mail Bonus
 Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina.
+
 Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, 
 in base a chi fa il punteggio più alto.
@@ -21,38 +22,30 @@ nostro programma così come lo faremmo "a mano" */
 //controlla che l' email sia nella lista di chi può accedere
 //stampa un messaggio appropriato sull’esito del controllo.
 
-//STRUMENI
-// array
-// prompt/input
-// const/let
+// lista degli utenti autorizzati
+// const authorizedUsers = [
+//   "user1@example.com",
+//   "user2@example.com",
+//   "user3@example.com",
+// ];
 
-//Chiedi all’utente la sua email e stampiamo
-
-// const user = prompt("scrivi qui la tua emial");
-// console.log(user);
-
-//creaiamo un array di elementi e salviamo in una variabile
-const elenco = [
-  "pippo@email.com",
-  "pippo@email.it",
-  "pippo@email.as",
-  "pippo@email.uk",
-  "pippo@email.us",
-  "pippo@email.wi",
-];
-// console.log(elenco[userEmail]);
-// console.log(elenco.length);
-const userEl = document.getElementById("user");
-console.log(userEl.value);
-
-//Seleziono il bottone della Dom
-const useremailEl = document.querySelector("button");
-
-// aggiungo un event listener
-buttonEl.addEventListener("click", function () {
-  //recupero il valore in console
-  console.log(userEl.value);
-
-  const user = 
-
-});
+function controllaAccesso() {
+  const email = document.getElementById("email").value;
+  const listaAccesso = [
+    "utente1@gmail.com",
+    "utente2@gmail.com",
+    "utente3@gmail.com",
+    "utente4@gmail.com",
+    "utente5@gmail.com",
+    "utente6@gmail.com",
+    "utente7@gmail.com",
+    "utente8@gmail.com",
+  ];
+  if (listaAccesso.includes(email)) {
+    document.getElementById("risultato").textContent = "Accesso consentito.";
+    risultato.style.background = "green";
+  } else {
+    document.getElementById("risultato").textContent = "Accesso negato.";
+    risultato.style.background = "red";
+  }
+}
