@@ -52,15 +52,22 @@ function controllaAccesso() {
 // Confronto i punteggi per stabilire il vincitore.
 //    utilizzando  if per controllare quale punteggio è maggiore.
 let numeroCasuale = Math.round(Math.random() * 5) + 1;
-console.log(numeroCasuale);
+
+document.getElementById("numero-casuale").innerText = numeroCasuale;
 
 let punteggioGiocatore1 = (numeroCasuale = Math.round(Math.random() * 5) + 1);
 let punteggiocomputer = (numeroCasuale = Math.round(Math.random() * 5) + 1);
 
 if (punteggioGiocatore1 > punteggiocomputer) {
-  console.log("il giocatore 1 ha vinto");
+  document.getElementById("risultatodadi").innerText =
+    "Il Giocatore 1 ha vinto!";
+  risultatodadi.style.background = "orange";
 } else if (punteggioGiocatore1 < punteggiocomputer) {
-  console.log("il giocatore 2 ha vinto");
+  document.getElementById("risultatodadi").innerText =
+    "Il Giocatore 2 ha vinto!";
+  risultatodadi.style.background = "lightblue";
 } else if ((punteggioGiocatore1 = punteggiocomputer)) {
-  console.log("i giocatori pareggiano");
+  document.getElementById("risultatodadi").innerText =
+    "///////// I Giocatori pareggiano //////////";
+  risultatodadi.style.background = "lightgrey";
 }
